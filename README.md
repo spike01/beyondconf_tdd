@@ -62,7 +62,11 @@ What do you need to set this test up? This can mean a whole range of things: mak
 
 #### Act
 
-Do the thing! 
+Do the thing! Here's where you do whatever it is that you're trying to test
+
+#### Assert
+
+Check that what you did works. In most cases, this will checking that a value you **expected** was the same as the **actual** value you got in the "act" stage
 
 ### The 2 rules of TDD
 
