@@ -1,6 +1,6 @@
 class Fizzbuzz
 
-  def play
+  def play(number)
 
   end
 end
