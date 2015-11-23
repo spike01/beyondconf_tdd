@@ -73,8 +73,55 @@ Check that what you did works. In most cases, this will checking that a value yo
 * Don’t write a line of new code unless you first have a failing automated test
 * Eliminate duplication.
 
+These are the two most basic rules - various other people have added and extended more, but these two are a great place to start.
+
 ### The 3 rules of FizzBuzz
 
 * Write a program that prints the numbers from 1 to 100. 
 * For multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. 
 * For numbers which are multiples of both three and five print “FizzBuzz”."
+
+### RSpec crash course
+
+You can start a project with RSpec quickly with `rspec --init`. This will make your spec folder and a handy handy `spec_helper`.
+
+Most of the time, you'll also need a `lib` folder - your folder structure should look like this:
+
+```sh
+.
+├── lib
+│   └── thing.rb
+└── spec
+    ├── thing_spec.rb
+    └── spec_helper.rb
+```
+
+Here's a very simple spec file - I'll run through each part:
+
+```ruby
+require "thing" 
+
+# this tells RSpec to load in the code you're trying to test. RSpec is clever so it knows that if it's in a spec folder, it should look in the corresponding lib folder
+
+RSpec.describe Thing do  
+
+# we're talking about a "Thing" - this divides up your tests into sections that are only concerned with the current code under test
+
+  it "yells when you poke it" do  # a description of what your test does - note trying to make it read like English
+    thing = Thing.new  # arrange
+    result = thing.poke  # act
+    expect(result).to eq("RAAAAAR")  # assert - note the use of ".to_eq" - this is a basic RSpec matcher - there are many more
+  end
+end
+```
+
+And the corresponding code:
+
+```ruby
+class Thing
+  def poke
+    "RAAAAAR"
+  end
+end
+```
+    
