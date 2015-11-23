@@ -32,6 +32,12 @@ RSpec.describe Fizzbuzz do
     expect(result).to eq("Fizzbuzz")
   end
 
+  it "fizzbuzzes for 30" do
+    fizzbuzz = Fizzbuzz.new
+    result = fizzbuzz.play(30)
+    expect(result).to eq("Fizzbuzz")
+  end
+
   it "returns the number otherwise" do
     fizzbuzz = Fizzbuzz.new
     result = fizzbuzz.play(1)
