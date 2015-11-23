@@ -5,8 +5,10 @@ class Fizzbuzz
       "Fizz"
     elsif number == 5
       "Buzz"
-    else
+    elsif number == 15
       "Fizzbuzz"
+    else
+      number
     end
   end
 end
