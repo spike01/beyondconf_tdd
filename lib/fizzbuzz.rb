@@ -1,12 +1,12 @@
 class Fizzbuzz
 
   def play(number)
-    if number % 3 == 0
-      "Fizz"
+    if number == 15
+      "Fizzbuzz"
     elsif number == 5
       "Buzz"
-    elsif number == 15
-      "Fizzbuzz"
+    elsif number % 3 == 0
+      "Fizz"
     else
       number
     end
