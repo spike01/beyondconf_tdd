@@ -1,15 +1,10 @@
 class Fizzbuzz
 
   def play(number)
-    if is_divisible_by?(15, number)
-      "Fizzbuzz"
-    elsif is_divisible_by?(5, number)
-      "Buzz"
-    elsif is_divisible_by?(3, number)
-      "Fizz"
-    else
-      number
-    end
+    return "Fizzbuzz" if is_divisible_by?(15, number)
+    return "Buzz" if is_divisible_by?(5, number)
+    return "Fizz" if is_divisible_by?(3, number)
+    number
   end
 
   def is_divisible_by?(divisor, number)
