@@ -20,6 +20,12 @@ RSpec.describe Fizzbuzz do
     expect(result).to eq("Buzz")
   end
 
+  it "buzzes for 10" do
+    fizzbuzz = Fizzbuzz.new
+    result = fizzbuzz.play(10)
+    expect(result).to eq("Buzz")
+  end
+
   it "fizzbuzzes for 15" do
     fizzbuzz = Fizzbuzz.new
     result = fizzbuzz.play(15)
