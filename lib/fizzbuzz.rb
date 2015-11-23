@@ -3,8 +3,10 @@ class Fizzbuzz
   def play(number)
     if number == 3
       "Fizz"
-    else
+    elsif number == 5
       "Buzz"
+    else
+      "Fizzbuzz"
     end
   end
 end
