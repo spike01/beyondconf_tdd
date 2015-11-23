@@ -1,7 +1,7 @@
 class Fizzbuzz
 
   def play(number)
-    if number == 15
+    if number % 15 == 0
       "Fizzbuzz"
     elsif number % 5 == 0
       "Buzz"
