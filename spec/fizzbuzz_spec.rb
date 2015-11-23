@@ -19,4 +19,10 @@ RSpec.describe Fizzbuzz do
     result = fizzbuzz.play(15)
     expect(result).to eq("Fizzbuzz")
   end
+
+  it "returns the number otherwise" do
+    fizzbuzz = Fizzbuzz.new
+    result = fizzbuzz.play(1)
+    expect(result).to eq(1)
+  end
 end
