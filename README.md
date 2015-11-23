@@ -2,6 +2,7 @@
 ### with Makers Academy
 
 >This is a help sheet that you can refer to during the workshop. If you have any questions, just ask as we go along.
+>There is also a full commit history, showing each step taken, the error message encountered (when RED), and some refactoring. Try to follow it through and copy each step!
 
 ### Introduction
 
